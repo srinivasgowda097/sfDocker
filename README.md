@@ -22,4 +22,4 @@ Access to application container:
 * Configure xdebug
 * Improve .ini settings
 * Configure a proper http server (apache/nginx)
-* Create environments (development/prodcution) containers
+* Create environments (development/production) containers
