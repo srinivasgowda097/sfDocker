@@ -2,5 +2,23 @@
 # sfDocker
 Simple Docker environment for Symfony 2 applications using docker-compose
 
-docker run -it -v $(pwd):/app sfdocker bash
 
+### Using docker-compose:
+
+docker-compose up
+open localhost:8000/app_dev.php
+
+### Using docker
+``docker build -t sfdocker .``
+
+``docker run -it -v $(pwd):/app sfdocker php app/console server:run 0.0.0.0:8000``
+
+Access to application container:
+``docker run -it -v $(pwd):/app sfdocker bash``
+
+### TODO:
+
+* Configure xdebug
+* Improve .ini settings
+* Configure a proper http server (apache/nginx)
+* Create environments (development/prodcution) containers
